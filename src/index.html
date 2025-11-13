@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/favicon.png" />
+    <title>Dicoding Stories - Berbagi Cerita</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <script type="module" src="/scripts/index.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="main-header container">
+        <a class="brand-name" href="#/" aria-label="Beranda Dicoding Stories">Dicoding Stories</a>
+
+        <nav id="navigation-drawer" class="navigation-drawer" aria-label="Navigasi utama">
+          <ul id="nav-list" class="nav-list">
+            <li><a href="#/">Beranda</a></li>
+            <li><a href="#/add-story">Tambah Story</a></li>
+            <li><a href="#/favorites">Favorit</a></li>
+            <li id="auth-nav-item">
+              <span id="user-info" style="display: none;"></span>
+              <a href="#/login" id="login-link">Masuk</a>
+              <a href="#/register" id="register-link">Daftar</a>
+              <button id="logout-btn" style="display: none;" class="logout-btn">Keluar</button>
+            </li>
+          </ul>
+        </nav>
+
+        <button id="drawer-button" class="drawer-button" aria-label="Buka menu navigasi" aria-expanded="false">☰</button>
+      </div>
+    </header>
+
+    <main id="main-content" class="main-content" role="main"></main>
+  </body>
+</html>

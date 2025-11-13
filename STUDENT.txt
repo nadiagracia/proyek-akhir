@@ -1,0 +1,4 @@
+APP_URL=https://story-api.dicoding.dev/v1
+MAP_SERVICE_API_KEY=Tidak diperlukan - menggunakan OpenStreetMap (gratis, tidak memerlukan API key)
+
+DEPLOYMENT_URL=https://your-app-name.netlify.app
